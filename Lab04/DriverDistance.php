@@ -5,18 +5,16 @@
         <br><br>
         <span>Select a destination :</span>
         <br><br>
-        <form action=" " method="GET">
-            <section name="destination[]" mulitple>
+        <form action="./CheckDistance.php" method="GET">
+            <select name="destination[]"  size=5 mulitple>
                 <option>Boston</option>
                 <option>Dallas</option>
                 <option>Miami</option>
                 <option>Nashville</option>
                 <option>Las Vegas</option>
                 <option>Pittsburgh</option>
-                <option>San Francisco</option>
                 <option>Toronto</option>
-                <option>Washington, DC</option>
-            </section>
+            </select>
             <br><br>
             <input type="submit" value="Submit"> 
             <input type="reset" value="Reset">
