@@ -6,7 +6,7 @@
         <span>Select a destination :</span>
         <br><br>
         <form action="./CheckDistance.php" method="GET">
-            <select name="destination[]"  size=5 mulitple>
+            <select name="destination" size=5 mulitple>
                 <option>Boston</option>
                 <option>Dallas</option>
                 <option>Miami</option>
