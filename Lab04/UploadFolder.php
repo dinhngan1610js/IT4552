@@ -1,18 +1,17 @@
 <html>
     <head>
-        <title>Upload Folder</title>
+        <title>Upload Folder using PHP </title>
     </head>
     <body>
 
-        <?php
+        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data"> 
             
-        ?>
-        
-        <h3>Upload Folder & View detail</h3>
-        <form action="#" method="post" enctype="multipart/form-data"> 
-            Select Folder to Upload: 
-            <input type="file" name="files[]" id="files" multiple directory="" webkitdirectory="" moxdirectory="" /><br/><br/> 
-            <input type="Submit" value="Upload" name="upload" />
+            Select Folder to Upload: <input type="file" name="dir_uppload[]" multiple directory="" webkitdirectory="" moxdirectory="" /><br/><br/> 
+            <input type="Submit" value="Upload" name="submit" >
         </form>
-  </body>
-</html>
+
+        <?php
+            var_dump($_FILES);
+        ?>
+    </body>
+  </html>
