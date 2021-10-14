@@ -32,7 +32,11 @@
                 }
                 return ($a == $b) ? 0 : (($a < $b) ? -1 : 1);
             }
-
+            
+            $example = array('name' => 'Buzz Lightyear', 
+                            'email' => 'buzz@starcommand.gal',
+                            'age' => 32,
+                            'smarts' => 'some');
 
             $values = array('name' => 'Buzz Lightyear', 
                             'email' => 'buzz@starcommand.gal',
@@ -81,12 +85,11 @@
             <div class="column" style="background-color:#aaa;">
                 <p>Values unsorted (before sort) : </p>
                 <ul>
-                    <pre>
-                        <li><b>name</b> &nbsp;&nbsp;: Buzz Lightyear</li>
-                        <li><b>email</b>&nbsp;&nbsp;: buzz@starcommand.gal</li>
-                        <li><b>age</b> &nbsp;&nbsp;&nbsp;: 32</li>
-                        <li><b>smarts</b>&nbsp;: some</li>
-                    </pre>
+                    <?php
+                        foreach ($example as $key=>$value){
+                            print "<pre><li><b>$key</b>\t: $value </li></pre>";
+                        }
+                    ?>
                 </ul>
             </div>
             <div class="column" style="background-color:#bbb;">
